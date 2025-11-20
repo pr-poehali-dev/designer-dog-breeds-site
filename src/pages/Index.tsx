@@ -19,7 +19,7 @@ const breeds: DogBreed[] = [
     name: "Мальтипу",
     mother: "Мальтийская болонка",
     father: "Той-пудель",
-    image: "/placeholder.svg",
+    image: "https://cdn.poehali.dev/projects/89b246bd-3921-46d0-a9e1-b385e720dee9/files/8f05939f-158b-4f06-bd9d-e8672c99fd70.jpg",
     lifespan: "12-15 лет",
     height: "20-35 см",
     weight: "2-7 кг",
@@ -31,7 +31,7 @@ const breeds: DogBreed[] = [
     name: "Пуделетой",
     mother: "Той-пудель",
     father: "Русский той-терьер",
-    image: "/placeholder.svg",
+    image: "https://cdn.poehali.dev/projects/89b246bd-3921-46d0-a9e1-b385e720dee9/files/1d4d7216-dc27-496b-b853-af6e56a6309c.jpg",
     lifespan: "12-16 лет",
     height: "20-28 см",
     weight: "2-4 кг",
@@ -43,7 +43,7 @@ const breeds: DogBreed[] = [
     name: "Лабрадудль",
     mother: "Лабрадор-ретривер",
     father: "Пудель (стандартный)",
-    image: "/placeholder.svg",
+    image: "https://cdn.poehali.dev/projects/89b246bd-3921-46d0-a9e1-b385e720dee9/files/e0edcd02-a278-4dbc-8c9d-65fb5033ea52.jpg",
     lifespan: "12-14 лет",
     height: "50-65 см",
     weight: "22-30 кг",
@@ -55,7 +55,7 @@ const breeds: DogBreed[] = [
     name: "Кокапу",
     mother: "Кокер-спаниель",
     father: "Пудель (миниатюрный)",
-    image: "/placeholder.svg",
+    image: "https://cdn.poehali.dev/projects/89b246bd-3921-46d0-a9e1-b385e720dee9/files/5b193874-75be-469c-a4cc-c9b17b0cf4bf.jpg",
     lifespan: "14-18 лет",
     height: "25-38 см",
     weight: "5-11 кг",
@@ -67,7 +67,7 @@ const breeds: DogBreed[] = [
     name: "Шнудель",
     mother: "Цвергшнауцер",
     father: "Пудель (миниатюрный)",
-    image: "/placeholder.svg",
+    image: "https://cdn.poehali.dev/projects/89b246bd-3921-46d0-a9e1-b385e720dee9/files/9f9ded14-6470-4ec3-ba0b-ce1f9374394f.jpg",
     lifespan: "12-15 лет",
     height: "30-40 см",
     weight: "6-9 кг",
@@ -79,7 +79,7 @@ const breeds: DogBreed[] = [
     name: "Кавапу",
     mother: "Кавалер кинг чарльз спаниель",
     father: "Пудель (миниатюрный)",
-    image: "/placeholder.svg",
+    image: "https://cdn.poehali.dev/projects/89b246bd-3921-46d0-a9e1-b385e720dee9/files/335e38ae-4cc5-4ccb-8637-8c92bc2f01ac.jpg",
     lifespan: "12-15 лет",
     height: "25-35 см",
     weight: "5-10 кг",
@@ -116,15 +116,15 @@ const Index = () => {
                       <h2 className="text-4xl font-bold text-brown-600 mb-2">
                         {breed.name}
                       </h2>
-                      <div className="flex items-center gap-3 text-brown-400 text-sm">
-                        <div className="flex items-center gap-2 bg-beige-100 px-4 py-2 rounded-full">
-                          <Icon name="Heart" size={16} className="text-brown-400" />
-                          <span className="font-medium">{breed.mother}</span>
+                      <div className="flex flex-wrap items-center gap-3 text-brown-400 text-sm">
+                        <div className="flex items-center gap-2 bg-pink-50 border border-pink-200 px-4 py-2 rounded-full">
+                          <span className="text-xs font-semibold text-pink-600">♀ МАТЬ:</span>
+                          <span className="font-medium text-brown-600">{breed.mother}</span>
                         </div>
-                        <Icon name="Plus" size={16} />
-                        <div className="flex items-center gap-2 bg-beige-100 px-4 py-2 rounded-full">
-                          <Icon name="Heart" size={16} className="text-brown-400" />
-                          <span className="font-medium">{breed.father}</span>
+                        <Icon name="Plus" size={16} className="text-brown-300" />
+                        <div className="flex items-center gap-2 bg-blue-50 border border-blue-200 px-4 py-2 rounded-full">
+                          <span className="text-xs font-semibold text-blue-600">♂ ОТЕЦ:</span>
+                          <span className="font-medium text-brown-600">{breed.father}</span>
                         </div>
                       </div>
                     </div>
